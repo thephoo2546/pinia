@@ -22,7 +22,7 @@
     <div class="card-con">
       <div v-for="(product, index) in storeProduct.productList" :key="index" :id="`card${index + 1}`">
         <div class="card" style="width: 16rem;">
-          <img :src="`/src/assets/${product.image}`" class="card-img-top">
+          <img :src="`/src/assets/${product.image}`" class="card-img-top" alt="Productlist">
           <div class="card-body">
             <h5 class="card-title"><b>{{ product.name }}</b></h5>
             <p>Price: {{ product.price }}</p>
